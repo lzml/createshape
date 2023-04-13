@@ -4,6 +4,9 @@
 #include "ShapeCircle.h"
 #include "ShapeArc.h"
 #include "Polyline.h"
+#include "ShapeBox.h"
+#include "ShapeFrustum.h"
+#include "ShapeSpire.h"
 
 CShapeFactory::CShapeFactory(void)
 {
@@ -49,6 +52,18 @@ CShape* CShapeFactory::createShape(ShapeID id)
 	else if (ShapeID::POLYLINE == id)
 	{
 		return new CPolyline;
+	}
+	else if (ShapeID::BOX == id)
+	{
+		return new CShapeBox;
+	}
+	else if (ShapeID::FRUSTUM == id)
+	{
+		return new CShapeFrustum;
+	}
+	else if (ShapeID::SPIRE == id)
+	{
+		return new CShapeSpire;
 	}
 
 	return NULL;

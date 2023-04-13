@@ -94,10 +94,13 @@ FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
     PUSHBUTTON      "创建块",IDC_BUTTON1,17,19,50,14
     PUSHBUTTON      "删除块",IDC_BUTTON2,17,44,50,14
-    PUSHBUTTON      "创建图层",IDC_CreateLayout,174,20,50,14
-    PUSHBUTTON      "删除图层",IDC_DelLayout,173,42,50,14
-    PUSHBUTTON      "改变图层颜色",IDC_ChangeColor,173,67,50,14
-    PUSHBUTTON      "遍历图层状态",IDC_ShowLayerStatus,173,97,50,14
+    PUSHBUTTON      "创建图层",IDC_CreateLayout,116,20,50,14
+    PUSHBUTTON      "删除图层",IDC_DelLayout,115,42,50,14
+    PUSHBUTTON      "改变图层颜色",IDC_ChangeColor,115,67,50,14
+    PUSHBUTTON      "遍历图层状态",IDC_ShowLayerStatus,115,97,50,14
+    PUSHBUTTON      "长方体",IDC_CreateBox,223,21,50,14
+    PUSHBUTTON      "平截头体",IDC_CreateFrustum,223,43,50,14
+    PUSHBUTTON      "三维弹簧",IDC_CreateSpire,223,67,50,14
 END
 
 
@@ -118,17 +121,6 @@ BEGIN
     END
 END
 #endif    // APSTUDIO_INVOKED
-
-
-/////////////////////////////////////////////////////////////////////////////
-//
-// AFX_DIALOG_LAYOUT
-//
-
-IDD_DIALOG1 AFX_DIALOG_LAYOUT
-BEGIN
-    0
-END
 
 
 /////////////////////////////////////////////////////////////////////////////

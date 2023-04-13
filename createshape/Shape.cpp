@@ -16,6 +16,8 @@ void CShape::draw()
 {
 	//获取图形数据库相关信息
 
+	acDocManager->lockDocument(acDocManager->curDocument());
+
 	//获得指向块表的指针
 	AcDbBlockTable *pBlockTable = NULL;
 	Acad::ErrorStatus acadErr = acdbHostApplicationServices()
@@ -54,6 +56,7 @@ void CShape::draw()
 	{
 		pBlockTable->close();
 	}
+		acDocManager->unlockDocument(acDocManager->curDocument());
 }
 
 void CShape::drawItem(AcDbBlockTableRecord*  pRecord)

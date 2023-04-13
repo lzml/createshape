@@ -8,6 +8,9 @@ enum ShapeID
 	CIRCLE,
 	ARC,
 	POLYLINE,
+	BOX,
+	FRUSTUM,
+	SPIRE,
 };
 
 

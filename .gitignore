@@ -38,3 +38,5 @@ Release
 *.sdf
 ipch
 *.user
+.vs
+*.opensdf

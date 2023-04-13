@@ -5,7 +5,8 @@ kHasBookName
 #include "stdafx.h"
 #include "ToolDlg.h"
 #include "afxdialogex.h"
-
+#include "ShapeBox.h"
+#include "ShapeFactory.h"
 
 extern CToolDlg* g_pToolDlg;
 
@@ -39,6 +40,9 @@ BEGIN_MESSAGE_MAP(CToolDlg, CDialogEx)
 	ON_BN_CLICKED(IDC_DelLayout, &CToolDlg::OnBnClickedDellayout)
 	ON_BN_CLICKED(IDC_ChangeColor, &CToolDlg::OnBnClickedChangecolor)
 	ON_BN_CLICKED(IDC_ShowLayerStatus, &CToolDlg::OnBnClickedShowlayerstatus)
+	ON_BN_CLICKED(IDC_CreateBox, &CToolDlg::OnBnClickedCreatebox)
+	ON_BN_CLICKED(IDC_CreateFrustum, &CToolDlg::OnBnClickedCreatefrustum)
+	ON_BN_CLICKED(IDC_CreateSpire, &CToolDlg::OnBnClickedCreatespire)
 END_MESSAGE_MAP()
 
 
@@ -359,4 +363,44 @@ void CToolDlg::OnBnClickedShowlayerstatus()
 	pLayerTabel->close();
 
 
+}
+
+
+void CToolDlg::OnBnClickedCreatebox()
+{
+	// TODO: 在此添加控件通知处理程序代码
+
+	CShape* box = CShapeFactory::getInstance()->createShape(ShapeID::BOX);
+	if (box)
+	{
+		box->draw();
+		CShapeFactory::getInstance()->releaseShape(box);
+	}
+
+}
+
+
+void CToolDlg::OnBnClickedCreatefrustum()
+{
+	// TODO: 在此添加控件通知处理程序代码
+
+	CShape* box = CShapeFactory::getInstance()->createShape(ShapeID::FRUSTUM);
+	if (box)
+	{
+		box->draw();
+		CShapeFactory::getInstance()->releaseShape(box);
+	}
+
+}
+
+
+void CToolDlg::OnBnClickedCreatespire()
+{
+	// TODO: 在此添加控件通知处理程序代码
+	CShape* box = CShapeFactory::getInstance()->createShape(ShapeID::SPIRE);
+	if (box)
+	{
+		box->draw();
+		CShapeFactory::getInstance()->releaseShape(box);
+	}
 }

@@ -77,9 +77,12 @@
     <ClCompile Include="Polyline.cpp" />
     <ClCompile Include="Shape.cpp" />
     <ClCompile Include="ShapeArc.cpp" />
+    <ClCompile Include="ShapeBox.cpp" />
     <ClCompile Include="ShapeCircle.cpp" />
     <ClCompile Include="ShapeFactory.cpp" />
+    <ClCompile Include="ShapeFrustum.cpp" />
     <ClCompile Include="ShapeLine.cpp" />
+    <ClCompile Include="ShapeSpire.cpp" />
     <ClCompile Include="StdAfx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
@@ -94,9 +97,12 @@
     <ClInclude Include="Resource.h" />
     <ClInclude Include="Shape.h" />
     <ClInclude Include="ShapeArc.h" />
+    <ClInclude Include="ShapeBox.h" />
     <ClInclude Include="ShapeCircle.h" />
     <ClInclude Include="ShapeFactory.h" />
+    <ClInclude Include="ShapeFrustum.h" />
     <ClInclude Include="ShapeLine.h" />
+    <ClInclude Include="ShapeSpire.h" />
     <ClInclude Include="StdAfx.h" />
     <ClInclude Include="ToolDlg.h" />
   </ItemGroup>

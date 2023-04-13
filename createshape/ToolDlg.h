@@ -28,4 +28,7 @@ public:
 	afx_msg void OnBnClickedDellayout();
 	afx_msg void OnBnClickedChangecolor();
 	afx_msg void OnBnClickedShowlayerstatus();
+	afx_msg void OnBnClickedCreatebox();
+	afx_msg void OnBnClickedCreatefrustum();
+	afx_msg void OnBnClickedCreatespire();
 };
