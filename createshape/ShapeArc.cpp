@@ -12,7 +12,7 @@ CShapeArc::~CShapeArc(void)
 }
 
 void CShapeArc::drawItem(AcDbBlockTableRecord* pRecord)
-{
+{	
 	AcGeVector3d vec(0,0,1);
 	AcGePoint3d ptCenter(100,150,0);
 
